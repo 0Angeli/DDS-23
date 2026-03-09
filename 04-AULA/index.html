@@ -1,12 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Formulários - tipos de input</h1>
-    <input type="text">
-</body>
+
+    <!-- Input - coleta informações do usuário -->
+    <!-- <input type="text" -->
+
+    <!-- Tag que engloba os campos do formulário -->
+     <!-- acion = para onde vai as informações preenchidas -->
+      <!-- method = forma de como as informaçãos serão -->
+    <form action="" method>
+        <fieldset>
+            <legend>Dados de Login</legend>
+
+        
+
+
+
+      <!-- label = texto para guiar o input -->
+      <!-- for =diz para qual input ele vai server -->
+      <label for="caixa-nome">Nome:</label>
+      <!-- id - identificação única daquele elemento -->
+      <!-- name = usado para identificar o input quando o dado é enviado -->
+      <input 
+      type="text" 
+      id="caixa-nome" 
+      name="caixa-nome" 
+      placeholder="Digite seu nome completo"
+      required=""
+      />
+      <br />
+      <br />
+
+      <!-- Forma 2 - input dentro do label -->
+      <label>
+        Email:
+        <input 
+        type="email" 
+        name="caixa-email" 
+        id="caixa-email"
+        placeholder="email@email.com" 
+        />
+        <br>
+        <br>
+
+        <!-- Caixa de senha -->
+         <label for="caixa-senha">Senha:</label>
+         <input 
+         type="password" 
+         name="caixa-senha" 
+         id="caixa-senha" 
+         placeholder="Senha pouco suspeita"
+         >
+        <br>
+        <br>
+
+         <!-- Caixa botão -->
+          <input type="submit" name="botao-login" id="botao-login" value="Login">
+</fieldset>
+      </label>
+    </form>
+    <br><br>
+    <fieldset>
+        <legend>Data e Hora</legend>
+ 
+    <!-- OUTROS INPUTS TOP -->
+    <!-- DATAS -->
+    <label for="input-data">Data</label>
+    <br><br>
+    <input type="date" name="input-data" id="input-data">
+    <br><br>
+    <!-- Data e hora -->
+     <input type="datetime-local" name="" id="">
+     <br><br>
+     <!-- Só data -->
+      <input type="time" name="" id="">
+      <br><br>
+</fieldset>
+<br>
+
+<fieldset>
+      <h2> Telefone </h2>
+      <!-- Telefone -->
+       <input type="tel" pattern="[0-9]{3}--[0-9]{5}--[09]{4}"
+       placeholder="(021) 9999-9999">
+    
+       <!-- Números -->
+        <h2>Números</h2>
+        <input type="number" name="caixa-numeros" id="caixa-numeros" min="-50" max="100"
+        value="67">
+</fieldset>
+
+<br><br>
+
+<fieldset>
+        <!-- Barrinha -->
+        <label for="">Barra top:</label>
+        0
+        <input type="range" min="0" max="100" value="20" step="20">
+        100
+
+        <!-- Texto GRANDE -->
+         <h2>Caixa de texto grande</h2>
+        <textarea name="" id="" placeholder="Biografia...">
+        </textarea>
+
+        <!-- Cores -->
+         <h2>Seletor de cor</h2>
+         <input type="color">
+</fieldset><br>
+<fieldset>
+
+
+    <!-- Bolinha - usado para selecionar uma opção dentre outroas-->
+    <label for="">Selecione seu Curso:</label>
+    <br>
+    <input type="radio" name="cursoEscolhido" value="TI"/>TI
+    <input type="radio" name="cursoEscolhido" value="Jogos"/>Jogos
+    <input type="radio" name="cursoEscolhido" value="Design"/>Design
+
+    <br><br>
+
+    <label for="">Selecione quais redes você ultiliza</label><br>
+    <input type="checkbox" name="" value="TT">TikTOk
+    <input type="checkbox" name="" value="Zap">Zap
+    <input type="checkbox" name="" value="UOL">Bate-papo UOL
+</fieldset>
+
+<fieldset>
+<br><br>
+    <!-- Caixa de seleção -->
+     <label for="">Selecione sua cidade:</label>
+    <select name="cidade" id="caixa-cidade">
+        <option value="Rio">Rio de Janeiro</option>
+        <option value="Toquio">Tóquio</option>
+        <option value="BR">Bauneário Camburiu</option>
+
+        <!-- Grupo de opções -->
+         <optgroup name="ES" value="ES" label="Espirito Santo">
+            <option value="Cari">Cariacica</option>
+            <option value="Cari">Carapina</option>
+            <option value="Cari">Feu Rosa</option>
+            <option value="Garaparibuziosminhaarte">Guarapari</option>
+         </optgroup>
+    </fieldset>    
+    </select>
+
+    <!-- Reset -->
+     <input type="reset">
+
+  </body>
 </html>

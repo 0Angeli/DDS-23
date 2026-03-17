@@ -1,0 +1,109 @@
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 20px;
+background-color: #f4f4f4;
+
+}
+
+/* Estilizei dois elementos ao mesmo tempo */
+h1,h2{
+    color: #1f3c88;
+}
+
+/* Seletor de classes */
+.destaque{
+    background-color: white;
+    border: 2px solid grey;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+/* PSEUDO CLASSE */
+a:link{
+    color: rgb(0, 255, 115);
+    text-decoration: none;
+}
+
+/* Estiliza links que não foram vizitados */
+a:link{
+    color: orange;
+}
+
+/* Estiliza links que foram vizitados */
+#visited{
+    color: purple;
+}
+
+/* Estiliza links quando  */
+a:hover{
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* Estiliza links quando é clicado */
+a:active{
+    color: green;
+}
+
+/* Estiliza o botão quando passar o mouse */
+button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+button:active{
+    transform:scaleX(2);
+    transform:scaleY(4);
+    transform:scaleZ(0);
+}
+
+/* Estiliza o input quando estou mexendo em um específico */
+input:focus{
+    outline: none;
+    border: 2px solid yellow;
+    background-color: azure;
+}
+
+/* Estiliza o input obrigatorio */
+input:required{
+    border: 2px solid red;
+}
+
+/* Estiliza o input válido */
+input:valid{
+    background-color: #ecfdf5;
+}
+
+/* Estiliza o input inválido */
+input:invalid{
+    background-color: #fef2f2;
+}
+
+/* Estiliza o input marcado */
+input:checked{
+    accent-color: green;
+}
+
+/* Estiliza o input desabilitado */
+input:disabled{
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+/* Seleciona o primeiro filho */
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/* Seleciona o último filho */
+.lista-exemplo li:last-child{
+    color: red;
+}
+
+/*  */
+.lista-exemploli:nth-child(3){
+    background-color: #fef3c7;
+}

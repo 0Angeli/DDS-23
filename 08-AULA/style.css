@@ -103,7 +103,48 @@ input:disabled{
     color: red;
 }
 
-/*  */
+/*  Seleciona algum filho*/
 .lista-exemploli:nth-child(3){
     background-color: #fef3c7;
+}
+
+/* Seleciona elementos sem conteúdo */
+.caixa-vazia:empty{
+    width: 200px;
+    height: 60px;
+    background-color: #fef2f2;
+    border: red;
+}
+
+/* PSEUDO ELEMENTO */
+
+h2::before{
+    content: "⭐";
+    color: #fef3c7;
+}
+
+/* insere  conteúdo DEPOIS de algum elemento */
+h2::after{
+    content: "✓";
+    color: green;
+}
+
+/* Estiliza o texto dentro dos inputs */
+input::placeholder{
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Estiliza otexto selecionado pelo usuário */
+::selection{
+    background-color: yellow;
+    color: green;
+    font-size: bold;
+}
+
+
+/* Estiliza os marcadores de texto */
+.lista-maker li::marker{
+    color: red;
+    font-size: 20px;
 }

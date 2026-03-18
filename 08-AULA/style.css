@@ -1,7 +1,34 @@
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face{
+    src: url(./fonts/PlaywriteDKUloopetGuides-Regular.ttf);
+    font-family: "Playwrite";
+}
+
+p{
+    font-family: "Playwrite";
+    color: darkblue;
+    font-size: 15px;
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+
+
 body{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 margin: 20px;
 background-color: #f4f4f4;
+color: black;
 
 }
 

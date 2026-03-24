@@ -1,0 +1,27 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+
+.icones{
+    color: rgb(41, 108, 172);
+    font-size: 120px;
+}
+
+.icones:hover{
+    color: white;
+    background-color: rgb(41, 108, 172);;
+    cursor: pointer;
+}
+
+.icones2{
+    color: green;
+    background-color: yellow;
+    font-size: 120px;
+}
+
+.icones2:hover{
+    color: yellow;
+    background-color: green;
+    cursor: pointer;
+}

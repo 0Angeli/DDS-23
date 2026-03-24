@@ -1,0 +1,55 @@
+body{
+    background-color: violet;
+    color: white;
+    text-align: center;
+}
+
+#bloco{
+    background-color: black;
+    display: block;
+}
+
+#flex{
+    background-color: aqua;
+    display: flex;
+    height: 700px;
+    /* flex-dorectopm: row;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    gap: 10px;
+    /* justify-content: start;
+    justify-content: end; */
+    justify-content: center;
+}
+.quad{
+    height: 200px;
+    width: 200px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+    /* float: left; */
+    /* display: inline-block; */
+    /* display: inline; */
+}
+
+#quad1{
+    background-color: red;
+}
+
+#quad2{
+    background-color: yellow;
+    /* margin-top: 20px; */
+}
+
+#quad3{
+    background-color: green;
+}
+
+#bloco-linha{
+    background-color: blue;
+    
+}
+
+#linha{
+    background-color: orange;
+}

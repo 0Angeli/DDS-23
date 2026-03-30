@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- IMPORTAÇÃO DO BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- IMPORAÇÃO CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- CONTANINER NO CORPO DO SITE INTEIRO -->
+  <body class="container bg-body-tertiary">
+    <header>
+      <nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">C&G Solutions</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vitória</a></li>
+                  <li><a class="dropdown-item" href="#">Vila Velha</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>BEM VINDO AO BOOTSTRAP</h1>
+      <!-- CRIANDO ECOLUNAS -->
+
+      <div class="row g-3">
+        <!-- col = chama o script para fazer um coluna -->
+        <!-- bg = background -->
+        <!-- p = padding -->
+        <!-- text = cor do texto -->
+        <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">
+          Coluna A
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-danger px-5 text-dark">
+          Coluna 2
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-info py-4 text-white">
+          Coluna Ômega
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success">
+          Coluna Fim
+        </div>
+      </div>
+
+      <h2 class="my-3">Display flex</h2>
+      <div
+        class="d-flex flex-wrap flex-md-nowrap gap-2 bg-body-secondary justify-content-lg-between align-items-center p-3"
+      >
+        <div class="P-2 bg-danger text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-warning text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-success text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-danger text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-warning text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-success text-white rounded-3 fs-1">OPÇÃO</div>
+        <div></div>
+      </div>
+
+      <h2 class="my-3">Display grid</h2>
+      <div class="d-grid gap-5">
+        <div class="P-2 bg-danger text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-warning text-white rounded-3 fs-1">OPÇÃO</div>
+        <div class="P-2 bg-success text-white rounded-3 fs-1">OPÇÃO</div>
+      </div>
+
+      <!-- Card group -->
+      <div class="card-group">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/R.00fa544fa963cdf7bc7b90b402a1edac?rik=2Lim4EF6GQ4N5Q&riu=http%3a%2f%2fimages1.wikia.nocookie.net%2f__cb20100604230324%2fshrek%2fimages%2f2%2f26%2fShrek_gonads.jpg&ehk=cldYNHHaOy26AdLR5x9e6EIAAWo58%2bEJLt9WyGBzers%3d&risl=&pid=ImgRaw&r=0" 
+          class="card-img-top" alt="shrek1" height="255"/>
+          <div class="card-body">
+            <h5 class="card-title">Cristiano Ronaldo - CR7</h5>
+            <p class="card-text">
+              Um homem, uma máquina, uma besta enjaulada com ódio
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.eJ4hFNSrLZWpyW4nWFbQhwHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="shrek2" height="255" />
+          <div class="card-body">
+            <h5 class="card-title">Ôneyma</h5>
+            <p class="card-text">
+              Filho de Deus, Pai, Feliz e Ousado 
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.OAXSwnuKYVfxuxs7NOzWuAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="shrek3" height="255"/>
+          <div class="card-body">
+            <h5 class="card-title">Shrek Smith</h5>
+            <p class="card-text">
+              Não é o Will Smith mas sim o Shrek
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- IMPORTAÇÃO DO JAVASCRIPT DO BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
